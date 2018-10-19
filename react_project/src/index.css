@@ -21,6 +21,7 @@ ul.header li {
 ul.header {
   background-color: #cbcbcb;
   padding: 0;
+  border-radius: 15px;
 
 }
 ul.header li a {
@@ -28,11 +29,16 @@ ul.header li a {
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
+  margin: 5px;
   display: inline-block;
+
 }
+
 .content {
   background-color: #FFF;
   padding: 20px;
+  border-radius: 10px;
+  width: 60%;
 }
 .content h2 {
   padding: 0;
@@ -43,7 +49,7 @@ ul.header li a {
 }
 
 .left-container {
-  width: 60%;
+
 }
 
 .right-container {
@@ -56,4 +62,26 @@ ul.header li a {
 .active {
   background-color: #464646;
   color: white!important;
+  border-radius: 15px;
+}
+
+/* Song Titles */
+
+.songtitle {
+background-color: #cbcbcb;
+padding: 15px;
+border-radius: 15px;
+}
+
+.firstrow {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 48%;
+  margin-right: 35px;
+}
+
+.secondrow {
+  display: flex;
+  flex-direction: column;
 }
