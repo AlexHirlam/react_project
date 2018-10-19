@@ -42,6 +42,16 @@ ul.header li a {
   margin-bottom: 10px;
 }
 
+.left-container {
+  width: 60%;
+}
+
+.right-container {
+  width: 40%;
+  float: left;
+}
+
+
 /* When button is active */
 .active {
   background-color: #464646;
