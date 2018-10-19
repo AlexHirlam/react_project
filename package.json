@@ -1,0 +1,19 @@
+{
+  "name": "react_project",
+  "version": "0.1.0",
+  "description": "An app that uses the spotify API",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexHirlam/react_project.git"
+  },
+  "author": "Alex Hirlam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexHirlam/react_project/issues"
+  },
+  "homepage": "https://github.com/AlexHirlam/react_project#readme"
+}
