@@ -7,14 +7,14 @@ class Songs extends Component {
     return (
       <div>
         <h2>Song List</h2>
-          <div class="firstrow">
+          <div class="songFirstrow">
             <p class="songtitle">{songItem}</p>
             <p class="songtitle">{songItem}</p>
             <p class="songtitle">{songItem}</p>
             <p class="songtitle">{songItem}</p>
             <p class="songtitle">{songItem}</p>
           </div>
-          <div class="secondrow">
+          <div class="songSecondrow">
             <p class="songtitle">{songItem}</p>
             <p class="songtitle">{songItem}</p>
             <p class="songtitle">{songItem}</p>

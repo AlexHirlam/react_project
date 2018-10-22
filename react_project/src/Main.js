@@ -7,6 +7,7 @@ import {
 import Home from "./Home";
 import Albums from "./Albums";
 import Songs from "./Songs";
+import pink_floyd from './album/pink_floyd.jpg';
 
 class Main extends Component {
   render() {
@@ -29,5 +30,6 @@ class Main extends Component {
     );
   }
 }
+
 
 export default Main;

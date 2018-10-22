@@ -34,11 +34,21 @@ ul.header li a {
 
 }
 
+.logo-main {
+  height: 200px;
+  display: flex;
+  padding-left: 830px;
+  margin-bottom: -60px;
+  margin-top: -40px;
+}
+
+
 .content {
   background-color: #FFF;
   padding: 20px;
   border-radius: 10px;
   width: 60%;
+  float: left;
 }
 .content h2 {
   padding: 0;
@@ -73,7 +83,7 @@ padding: 15px;
 border-radius: 15px;
 }
 
-.firstrow {
+.songFirstrow {
   display: flex;
   flex-direction: column;
   float: left;
@@ -81,7 +91,53 @@ border-radius: 15px;
   margin-right: 35px;
 }
 
-.secondrow {
+.songSecondrow {
   display: flex;
   flex-direction: column;
+}
+
+/* Album Page */
+
+.album {
+  height: 300px;
+  width: 300px;
+}
+
+.albumContainer {
+  background-color: #1da1f2;
+  padding: 15px;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+}
+
+.albumFirstrow {
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+  margin-right: 35px;
+}
+
+.albumSecondrow {
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+}
+
+.albumThirdrow {
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+}
+
+/* MAIN IMAGE ON RIGHT */
+#image {
+  background-color: #1da1f2;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  float: right;
+  margin-right: 10%;
 }
