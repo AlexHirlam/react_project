@@ -10,6 +10,8 @@ import Songs from "./Songs";
 import pink_floyd from './album/pink_floyd.jpg';
 
 
+
+
 class Main extends Component {
   render() {
     return (
@@ -20,6 +22,7 @@ class Main extends Component {
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/albums">Albums</NavLink></li>
             <li><NavLink to="/songs">Songs</NavLink></li>
+            <a  class="loginButton" href='http://localhost:8888' > Login to Spotify </a>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>

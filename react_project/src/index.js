@@ -20,7 +20,7 @@ class App extends Component {
     spotifyApi.setAccessToken(token);
     this.state = {
     loggedIn: token ? true : false,
-    nowPlaying: { name: 'Not Checked', albumArt: '' }
+    nowPlaying: { name: 'Not Checked', artist: 'Not Checked', albumArt: '' }
       }
     }
   }
@@ -41,6 +41,7 @@ class App extends Component {
         this.setState({
           nowPlaying: {
             name: response.item.name,
+            artist: response.item.artists[0].name,
             image: response.item.album.images[0].url
           }
         })
@@ -48,14 +49,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <a href='http://localhost:8888' > Login to Spotify </a>
-        <div> Now Playing: {this.state.nowPlaying.name} </div>
+      <div idName="App">
+        <div class="nowPlaying"> Now Playing: {this.state.nowPlaying.name} By {this.state.nowPlaying.artist} </div>
         <div>
           <img src= {this.state.nowPlaying.image} style={{height: 300}}/>
         </div>
         { this.state.loggedIn &&
-        <button onClick={() => this.getNowPlaying()}>
+        <button  class="checkButton" onClick={() => this.getNowPlaying()}>
           Check Now Playing
         </button>
       }
@@ -73,12 +73,8 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById("nowPlaying")
-);
 
 ReactDOM.render(
-  <Image/>,
+  <App/>,
   document.getElementById("image")
 );

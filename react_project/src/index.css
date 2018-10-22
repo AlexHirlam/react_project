@@ -135,11 +135,20 @@ border-radius: 15px;
 #image {
   background-color: #1da1f2;
   width: 300px;
-  height: 300px;
+  height: 375px;
   padding: 15px;
   border-radius: 15px;
   float: right;
   margin-right: 10%;
+}
+
+.checkButton {
+  margin-top: 12px;
+}
+
+.nowPlaying {
+  margin-bottom: 15px;
+  align-content: center;
 }
 
 /* LOGIN PAGE */
@@ -151,3 +160,12 @@ border-radius: 15px;
   #loggedin {
     display: none;
   }
+
+.loginButton {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  background-color: #1da1f2;
+  padding: 15px;
+  border-radius: 10px;
+}
