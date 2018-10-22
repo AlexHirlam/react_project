@@ -141,3 +141,13 @@ border-radius: 15px;
   float: right;
   margin-right: 10%;
 }
+
+/* LOGIN PAGE */
+
+#login {
+    display: none;
+  }
+
+  #loggedin {
+    display: none;
+  }
