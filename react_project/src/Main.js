@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   Route,
   NavLink,
-  HashRouter
+  BrowserRouter
 } from "react-router-dom";
 import Home from "./Home";
 import Albums from "./Albums";
@@ -13,7 +13,7 @@ import pink_floyd from './album/pink_floyd.jpg';
 class Main extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <h1 className="title">Music Master</h1>
           <ul className="header">
@@ -27,7 +27,7 @@ class Main extends Component {
             <Route path="/songs" component={Songs}/>
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
