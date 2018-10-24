@@ -7,9 +7,11 @@ import "./index.css";
 
 import React, { Component } from 'react';
 
-
 import SpotifyWebApi from 'spotify-web-api-js';
 const spotifyApi = new SpotifyWebApi();
+
+
+
 
 class App extends Component {
   constructor(){
@@ -20,9 +22,11 @@ class App extends Component {
     spotifyApi.setAccessToken(token);
     this.state = {
     loggedIn: token ? true : false,
-    nowPlaying: { name: 'Not Checked', artist: 'Not Checked', albumArt: '' }
-      }
+    nowPlaying: { name: 'Track', artist: 'Artist', albumArt: '' },
     }
+      } else {
+        window.location = "http://localhost:8888";
+      }
   }
   getHashParams() {
     var hashParams = {};
@@ -55,9 +59,7 @@ class App extends Component {
           <img src= {this.state.nowPlaying.image} style={{height: 300}}/>
         </div>
         { this.state.loggedIn &&
-        <button  class="checkButton" onClick={() => this.getNowPlaying()}>
-          Check Now Playing
-        </button>
+        this.getNowPlaying()
       }
       </div>
     );

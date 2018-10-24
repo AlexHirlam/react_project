@@ -10,6 +10,7 @@ const followers = '59,393';
 
 
 class Home extends Component {
+
   constructor(){
     super();
     const params = this.getHashParams();
@@ -18,7 +19,11 @@ class Home extends Component {
     spotifyApi.setAccessToken(token);
     this.state = {
     loggedIn: token ? true : false,
-    artistBio: { name: 'Not Checked', artist: 'Not Checked', albumArt: '' }
+    artistBio: {artist: 'Loading...'}
+      }
+    } else {
+      this.state = {
+      artistBio: {artist: 'Loading...'}
       }
     }
   }
@@ -33,36 +38,35 @@ class Home extends Component {
     }
     return hashParams;
   }
-  getArtistBio(){
-    spotifyApi.getMyCurrentPlaybackState()
-      .then((response) => {
-        this.setState({
-          artistBio: {
-            name: response.item.name,
-            artist: response.item.artists[0].name,
-            image: response.item.album.images[0].url
-          }
-        })
+
+getArtistBio(){
+  spotifyApi.getMyCurrentPlaybackState()
+    .then((response) => {
+      this.setState({
+        artistBio: {
+          artist: response.item.artists[0].name,
+        }
       })
-  }
+    })
+}
+
     render() {
       return (
         <div>
+        {
+          this.getArtistBio()
+        }
           <div class="left-container">
-            <h2>{this.state.artistBio.artist} Bio</h2>
+            <h2> {this.state.artistBio.artist} Bio</h2>
             <p>{artistBio} - Ultimately comprisong members from Sweden, the U.S., and France, this retro-flavored blues-rock quartet were orinially founded as a trio in 2011 when the former
             rhythm section of Iowa act Radio Moscow -- Zack Anderson and Cory Berry -- recorded a demo with vocalist Elin Larsson in her Swedish hometown of Orebro.</p>
             <p>Monthy Listerners: {monthlyListerners}</p>
             <p>Followers: {followers}</p>
+            </div>
           </div>
-        </div>
       );
     }
   }
-
-
-
-
 
 
 
