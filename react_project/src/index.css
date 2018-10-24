@@ -1,9 +1,16 @@
 body {
-  background-color: #333d47;
+  background-color: #333D47;
   padding: 20px;
   margin: 0;
+  padding-left: 150px;
+  padding-right: 150px;
 }
-h1, h2, p, ul, li {
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4, p, ul, li {
   font-family: sans-serif;
 }
 
@@ -37,7 +44,7 @@ ul.header li a {
 .logo-main {
   height: 200px;
   display: flex;
-  padding-left: 830px;
+  padding-left: 715px;
   margin-bottom: -60px;
   margin-top: -40px;
 }
@@ -47,7 +54,7 @@ ul.header li a {
   background-color: #FFF;
   padding: 20px;
   border-radius: 10px;
-  width: 60%;
+  width: 1052px;
   float: left;
 }
 .content h2 {
@@ -67,12 +74,23 @@ ul.header li a {
   float: left;
 }
 
+.monthly {
+  display: flex;
+  float: left;
+}
+
+.followers {
+  display: flex;
+  float: left;
+  margin-left: 40px;
+}
 
 /* When button is active */
 .active {
   background-color: #464646;
   color: white!important;
   border-radius: 15px;
+  box-shadow: 2px 2px black;
 }
 
 /* Song Titles */
@@ -104,7 +122,7 @@ border-radius: 15px;
 }
 
 .albumContainer {
-  background-color: #1da1f2;
+  background-color: #1db954;
   padding: 15px;
   border-radius: 15px;
   width: 300px;
@@ -133,13 +151,12 @@ border-radius: 15px;
 
 /* MAIN IMAGE ON RIGHT */
 #image {
-  background-color: #1da1f2;
+  background-color: #1db954;
   width: 300px;
-  height: 375px;
   padding: 15px;
   border-radius: 15px;
   float: right;
-  margin-right: 10%;
+  margin-right: 6%;
 }
 
 .checkButton {
@@ -148,7 +165,9 @@ border-radius: 15px;
 
 .nowPlaying {
   margin-bottom: 15px;
-  align-content: center;
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 /* LOGIN PAGE */
@@ -165,7 +184,8 @@ border-radius: 15px;
   float: right;
   margin-top: 10px;
   margin-right: 20px;
-  background-color: #1da1f2;
+  background-color: #1db954;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 2px 2px #137636;
 }

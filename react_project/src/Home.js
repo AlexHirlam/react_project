@@ -60,8 +60,8 @@ getArtistBio(){
             <h2> {this.state.artistBio.artist} Bio</h2>
             <p>{artistBio} - Ultimately comprisong members from Sweden, the U.S., and France, this retro-flavored blues-rock quartet were orinially founded as a trio in 2011 when the former
             rhythm section of Iowa act Radio Moscow -- Zack Anderson and Cory Berry -- recorded a demo with vocalist Elin Larsson in her Swedish hometown of Orebro.</p>
-            <p>Monthy Listerners: {monthlyListerners}</p>
-            <p>Followers: {followers}</p>
+            <h3 class="monthly">Monthy Listerners: {monthlyListerners}</h3>
+            <h3 class="followers">Followers: {followers}</h3>
             </div>
           </div>
       );
